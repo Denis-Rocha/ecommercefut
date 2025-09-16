@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL Store - Camisetas de Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="logo-container">
+            <div id="logo">
+                ESPAÇO PARA LOGO<br>
+                DL Store
+            </div>
+        </div>
+        <div class="main-menu">
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="#" data-category="home">Página Inicial</a></li>
+                <li><a href="#" data-category="brasileirao">Brasileirão Série A</a></li>
+                <li><a href="#" data-category="la-liga">La Liga</a></li>
+                <li><a href="#" data-category="premier-league">Premier League</a></li>
+                <li><a href="#" data-category="serie-a-italia">Série A Itália</a></li>
+                <li><a href="#" data-category="bundesliga">Bundesliga</a></li>
+                <li><a href="#" data-category="ligue-1">Ligue 1</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar camisetas...">
+            </div>
+            <div class="icons">
+                <a href="#" id="cart-icon">&#x1F6D2;</a> </div>
+        </header>
+
+        <div id="home-page" class="page-content active-page">
+            <h2 class="page-title">Camisetas em Destaque</h2>
+            <div class="product-grid" id="home-page-grid"></div>
+        </div>
+
+        <div id="brasileirao-page" class="page-content">
+            <h2 class="page-title">Brasileirão Série A</h2>
+            <div class="product-grid" id="brasileirao-page-grid"></div>
+        </div>
+
+        <div id="la-liga-page" class="page-content">
+            <h2 class="page-title">La Liga</h2>
+            <div class="product-grid" id="la-liga-page-grid"></div>
+        </div>
+
+        <div id="premier-league-page" class="page-content">
+            <h2 class="page-title">Premier League</h2>
+            <div class="product-grid" id="premier-league-page-grid"></div>
+        </div>
+
+        <div id="serie-a-italia-page" class="page-content">
+            <h2 class="page-title">Série A Itália</h2>
+            <div class="product-grid" id="serie-a-italia-page-grid"></div>
+        </div>
+        
+        <div id="bundesliga-page" class="page-content">
+            <h2 class="page-title">Bundesliga</h2>
+            <div class="product-grid" id="bundesliga-page-grid"></div>
+        </div>
+
+        <div id="ligue-1-page" class="page-content">
+            <h2 class="page-title">Ligue 1</h2>
+            <div class="product-grid" id="ligue-1-page-grid"></div>
+        </div>
+        
+        <div id="search-page" class="page-content">
+            <h2 class="page-title" id="search-page-title">Resultados da Busca</h2>
+            <div class="product-grid" id="search-page-grid"></div>
+        </div>
+
+        <div id="product-detail" class="page-content product-detail-page">
+            <div class="product-info-section">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="main-product-image" src="https://via.placeholder.com/600x600.png?text=Imagem+Principal" alt="Imagem principal do produto">
+                    </div>
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="https://via.placeholder.com/300x300.png?text=Foto+1" alt="Miniatura 1">
+                        <img class="thumbnail" src="https://via.placeholder.com/300x300.png?text=Foto+2" alt="Miniatura 2">
+                        <img class="thumbnail" src="https://via.placeholder.com/300x300.png?text=Foto+3" alt="Miniatura 3">
+                        <img class="thumbnail" src="https://via.placeholder.com/300x300.png?text=Foto+4" alt="Miniatura 4">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h2 id="product-name">Nome da Camiseta</h2>
+                    <div class="price-box">
+                        <span class="main-price" id="product-price">R$ 0,00</span>
+                        <div class="old-price" id="product-old-price">R$ 0,00</div>
+                        <div class="installments">em até 12x de <span id="product-installments">R$ 0,00</span></div>
+                    </div>
+
+                    <div class="product-options">
+                        <h4>Tamanhos</h4>
+                        <div class="sizes">
+                            <button data-size="P">P</button>
+                            <button data-size="M">M</button>
+                            <button data-size="G">G</button>
+                            <button data-size="GG">GG</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <div class="accordion-header">
+                    Guia de Medidas
+                </div>
+                <div class="accordion-content">
+                    <table>
+                        <thead>
+                            <tr><th>Tamanho</th><th>Cintura (cm)</th><th>Largura (cm)</th><th>Comprimento (cm)</th><th>Peso (kg)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>P</td><td>68-72</td><td>50-52</td><td>68-70</td><td>60-70</td></tr>
+                            <tr><td>M</td><td>72-76</td><td>52-54</td><td>70-72</td><td>70-80</td></tr>
+                            <tr><td>G</td><td>76-80</td><td>54-56</td><td>72-74</td><td>80-90</td></tr>
+                            <tr><td>GG</td><td>80-84</td><td>56-58</td><td>74-76</td><td>90-100</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <div class="accordion-header">
+                    Perguntas Frequentes
+                </div>
+                <div class="accordion-content">
+                    <p>Aqui você pode adicionar respostas para as perguntas mais comuns sobre o produto.</p>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <div class="accordion-header">
+                    Compra Segura
+                </div>
+                <div class="accordion-content">
+                    <p>Aqui você pode descrever como a compra é segura e os métodos de pagamento.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            &copy; 2025 DL Store. Todos os direitos reservados.
+        </footer>
+    </div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Meu Carrinho</h3>
+        <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+        <p class="empty-cart-message">Seu carrinho está vazio.</p>
+    </div>
+    <div class="cart-summary">
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">R$ 0,00</span>
+        </div>
+        <button class="checkout-button">Finalizar Compra</button>
+    </div>
+</div>
+
+<div id="popup-overlay" class="popup-overlay">
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            <h4 id="popup-title"></h4>
+            <button id="close-popup">&times;</button>
+        </div>
+        <p id="popup-message"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
