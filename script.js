@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedSize = null;
     let currentProduct = null;
 
+    // Carrinho
     let cart = [];
 
     // Função para renderizar os produtos em uma grid
@@ -206,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartDisplay();
     }
 
-    // --- Event Listeners (Controladores de Eventos) ---
+    // --- Eventos ---
 
     // Navegação
     navLinks.forEach(link => {
